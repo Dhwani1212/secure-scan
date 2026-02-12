@@ -1,0 +1,1060 @@
+[
+    {
+        "id": 1,
+        "category": "Basic Security",
+        "questions": [
+            {
+                "id": 1,
+                "text": "Do you have a tool that shows all the devices connected to your WiFi or network?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yup, it shows everything automatically",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Yeah, but we check manually",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Kind of, only sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Nope / No clue",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "Do you control who can join your network so random devices can’t sneak in?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Fully locked down",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly controlled",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "A little bit",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Nope / No idea",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "text": "Do you use anything that tells you what software/apps are installed on your systems?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, completely automated",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Yes, but we check by hand",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sort of",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No / Don’t know",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "text": "Do you guide employees on which apps are allowed or not?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, all apps are controlled",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Yes, for important apps",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Kind of",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Nope",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "text": "Do you have a tool that scans for weaknesses or security issues?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, runs automatically",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Yes, but manually",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "A little bit",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No idea",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "text": "Are your computers automatically updated with security patches?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Always updated",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly updated",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes updated",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No idea",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "text": "Do you know exactly who has “admin access”?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, tracked clearly",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Kind of",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Nope",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "text": "Do you follow clear rules about who gets admin access?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Strict rules",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Some rules",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No rules",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "text": "Do you check your systems for wrong settings or unsafe configurations?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, automatically",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Yes, manually",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Nope",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "text": "Do you enforce basic security rules like strong passwords?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, enforced",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Yes, partly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sort of",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "text": "Do you use tools that monitor logs for weird or suspicious activity?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Fully automated",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "We try",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "text": "Do all your logs get collected in one place so they’re easy to review?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yup",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Kinda",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Nope",
+                        "score": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "Foundational Security",
+        "questions": [
+            {
+                "id": 13,
+                "text": "Do you limit which browsers or email apps people can use?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, fully controlled",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Yes, for the most part",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 14,
+                "text": "Do you scan email attachments before opening them?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, automatically",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Sometimes",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Never",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "text": "Do you use anti-malware or antivirus tools?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, everywhere",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "On most systems",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Only some systems",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Nope",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 16,
+                "text": "Do malware alerts go to a central team or system?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Always",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Usually",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 17,
+                "text": "Do you know which network ports/services are active by default?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, fully",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "A little",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 18,
+                "text": "Do you get alerts if weird/unknown ports open up?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Sometimes",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "text": "Do you automatically back up your data?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Always",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Often",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Never",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 20,
+                "text": "Is your backup data protected while moving or being stored?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes, encrypted",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Not sure",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 21,
+                "text": "Do you use MFA to log in to routers, firewalls, or network devices?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes everywhere",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "On some devices",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No idea",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 22,
+                "text": "Do you check for unexpected changes in your network settings?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Occasionally",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 23,
+                "text": "Do you know all the connections your network has to the internet?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Somewhat",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 24,
+                "text": "Can you block suspicious traffic if needed?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Nope",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 25,
+                "text": "Do you know what counts as “sensitive data” in your company?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "A bit",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 26,
+                "text": "Do you monitor sensitive data to ensure it’s safe?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Fully",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Partly",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Not at all",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 27,
+                "text": "Do people only access the information they truly need for their job?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Always",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 28,
+                "text": "Do you store each team’s data separately (HR separate from Finance etc.)?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 29,
+                "text": "Do you have a separate guest WiFi?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 30,
+                "text": "Do you track all approved WiFi access points?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Somewhat",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No idea",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 31,
+                "text": "Do most logins go through a single system (like Google Workspace/Okta)?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "A bit",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Not at all",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 32,
+                "text": "Do you use MFA for important accounts?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes everywhere",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "On some accounts",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "category": "Organizational Security",
+        "questions": [
+            {
+                "id": 33,
+                "text": "Do you train employees about security basics?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Regularly trained",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Sometimes",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Never",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 34,
+                "text": "Do you train employees to spot scams or phishing emails?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Sometimes",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 35,
+                "text": "Do developers follow safe coding practices?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Always",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Mostly",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No idea",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 36,
+                "text": "Do you test your software for security issues?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Sometimes",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 37,
+                "text": "Do you have a plan for what to do if there’s a cyber incident?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Clear plan",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Rough plan",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "A little",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No plan",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 38,
+                "text": "Do you practice your incident response plan?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Sometimes",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 39,
+                "text": "Do you do ethical hacking or penetration tests to find weaknesses?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Sometimes",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Rarely",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "Never",
+                        "score": 0
+                    }
+                ]
+            },
+            {
+                "id": 40,
+                "text": "Do you use tools to scan your systems for vulnerabilities?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Yes",
+                        "score": 3
+                    },
+                    {
+                        "key": "B",
+                        "text": "Often",
+                        "score": 2
+                    },
+                    {
+                        "key": "C",
+                        "text": "Sometimes",
+                        "score": 1
+                    },
+                    {
+                        "key": "D",
+                        "text": "No",
+                        "score": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

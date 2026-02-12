@@ -1,0 +1,2 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+bhuvan     13665    5505 30 06:32 pts/6    00:00:47 /home/bhuvan/.local/share/pipx/venvs/arjun/bin/python /home/bhuvan/.local/bin/arjun -i webs/url_extract_nodupes.txt -t 10 -oJ .tmp/arjun.json

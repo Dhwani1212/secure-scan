@@ -1,0 +1,9 @@
+total 192
+-rw-r--r-- 1 bhuvan bhuvan      0 Jan 24 06:04 graphql_json.txt
+-rw-r--r-- 1 bhuvan bhuvan      0 Jan 24 06:03 critical_json.txt
+-rw-r--r-- 1 bhuvan bhuvan      0 Jan 24 05:53 high_json.txt
+-rw-r--r-- 1 bhuvan bhuvan      0 Jan 24 05:32 medium_json.txt
+-rw-r--r-- 1 bhuvan bhuvan      0 Jan 24 05:16 low_json.txt
+-rw-r--r-- 1 bhuvan bhuvan    516 Jan 24 05:16 info.txt
+-rw-r--r-- 1 bhuvan bhuvan 189971 Jan 24 05:12 info_json.txt
+-rw-r--r-- 1 bhuvan bhuvan 8620 Jan 24 05:32 /home/bhuvan/recon-results/697426c0929b184038b45efa/recon.log

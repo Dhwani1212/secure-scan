@@ -1,0 +1,1 @@
+-rw-r--r-- 1 bhuvan bhuvan 0 Jan 24 05:53 /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/nuclei_output/high_json.txt

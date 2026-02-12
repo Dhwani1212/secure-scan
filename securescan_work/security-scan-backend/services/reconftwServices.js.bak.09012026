@@ -1,0 +1,281 @@
+const { spawn, exec } = require("child_process");
+const fs = require("fs");
+const path = require("path");
+
+const Scan = require("../models/Scan");
+const scoringService = require("./scoringServices");
+
+/* ============================
+   CONSTANTS
+============================ */
+
+const RECONFTW_DIR = process.env.RECONFTW_DIR;
+const RECONFTW_SAFE_BIN = process.env.RECONFTW_SAFE_BIN;
+const SAFE_OUTPUT_BASE = process.env.SAFE_OUTPUT_BASE;
+
+
+/* ============================
+   HELPERS
+============================ */
+
+function sanitizeDomain(domain) {
+  return domain.toLowerCase().trim().replace(/[^a-z0-9.-]/g, "");
+}
+
+function isBlockedTarget(target) {
+  if (!target) return true;
+
+  const blocked = ["localhost", "127.0.0.1", "::1"];
+  if (blocked.includes(target)) return true;
+
+  if (/^10\./.test(target)) return true;
+  if (/^192\.168\./.test(target)) return true;
+  if (/^172\.(1[6-9]|2\d|3[0-1])\./.test(target)) return true;
+
+  return false;
+}
+
+async function setScanStatus(scanId, patch) {
+  try {
+    await Scan.findByIdAndUpdate(scanId, patch);
+  } catch {}
+}
+
+function normalizeFindings(vulns = []) {
+  return vulns.map((line, index) => ({
+    id: index + 1,
+    title: line.slice(0, 120),
+    severity: line.toLowerCase().includes("critical")
+      ? "critical"
+      : line.toLowerCase().includes("high")
+      ? "high"
+      : line.toLowerCase().includes("medium")
+      ? "medium"
+      : "low",
+    raw: line
+  }));
+}
+
+/* ============================
+   PARSE RESULTS (LINUX NATIVE)
+============================ */
+
+async function readFileSafe(file) {
+  try {
+    return fs.readFileSync(file, "utf8")
+      .split("\n")
+      .map(l => l.trim())
+      .filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
+async function parseResultsFromPath(base) {
+  const subdomains = readFileSafe(`${base}/subdomains/all_subdomains.txt`);
+  const hosts = readFileSafe(`${base}/hosts/all_hosts.txt`);
+  const osint = readFileSafe(`${base}/osint/domain_info_general.txt`);
+  const technologies = readFileSafe(`${base}/webs/tech_detected.txt`);
+
+  const vulnerabilities = await new Promise(resolve => {
+    exec(`find ${base}/vulns -type f -exec cat {} +`, (e, o) => {
+      if (e) return resolve([]);
+      resolve(o.split("\n").map(l => l.trim()).filter(Boolean));
+    });
+  });
+
+  const openPorts = await new Promise(resolve => {
+    exec(`grep '/open/' ${base}/**/*nmap* 2>/dev/null`, (e, o) => {
+      if (e) return resolve([]);
+      resolve(
+        o.split("\n")
+          .map(r => {
+            const m = r.match(/(\d+)\/tcp\s+open\s+(\S+)/);
+            return m ? { port: Number(m[1]), service: m[2] } : null;
+          })
+          .filter(Boolean)
+      );
+    });
+  });
+
+  return { vulnerabilities, subdomains, hosts, osint, technologies, openPorts };
+}
+
+/* ============================
+   STOP SCAN (100% PERFECT)
+============================ */
+
+async function stopScan(scanId) {
+  const scan = await Scan.findById(scanId);
+  if (!scan) return false;
+
+  const pgid = scan.pgid || scan.pid;
+  if (!pgid) return false;
+
+  try {
+    // Kill entire process group
+    process.kill(-pgid, "SIGTERM");
+
+    // Force kill after 5s
+    setTimeout(() => {
+      try {
+        process.kill(-pgid, "SIGKILL");
+      } catch {}
+    }, 5000);
+
+    await setScanStatus(scanId, {
+      status: "stopped",
+      completedAt: new Date(),
+      currentModule: null,
+      pid: null,
+      pgid: null
+    });
+
+    return true;
+  } catch (err) {
+    throw new Error("Failed to stop scan: " + err.message);
+  }
+}
+
+
+/* ============================
+   START SCAN (PGID ENABLED)
+============================ */
+
+async function scanDomain(domain, scanId, mode = "full") {
+  if (isBlockedTarget(domain)) {
+    await setScanStatus(scanId, {
+      status: "failed",
+      error: "Localhost or private IP targets are not allowed"
+    });
+    return;
+  }
+
+  const scanIdStr = scanId.toString();
+const cleanDomain = sanitizeDomain(domain);
+
+const safeOutput = path.join(SAFE_OUTPUT_BASE, scanIdStr);
+const targetFile = path.join(safeOutput, "targets.txt");
+const logFile = path.join(safeOutput, "recon.log");
+
+fs.mkdirSync(safeOutput, { recursive: true });
+
+
+  await setScanStatus(scanId, {
+    status: "running",
+    startedAt: new Date(),
+    progressPct: 5,
+    currentModule: "Initializing ReconFTW",
+    outputPath: safeOutput,
+    logFile
+  });
+
+// 🔒 SAFE & CORRECT reconFTW execution mapping
+let command = "";
+
+switch (mode) {
+  case "passive":
+    // Passive OSINT only
+    command = `
+${RECONFTW_SAFE_BIN} \
+-d ${cleanDomain} \
+-p \
+-o ${safeOutput}
+`;
+    break;
+
+  case "subdomain":
+    // Subdomain enumeration only
+    command = `
+${RECONFTW_SAFE_BIN} \
+-d ${cleanDomain} \
+-s \
+-o ${safeOutput}
+`;
+    break;
+
+  case "web":
+    // Web probing & crawling only (requires list mode)
+    command = `
+echo "http://${cleanDomain}" > ${targetFile} && \
+${RECONFTW_SAFE_BIN} \
+-l ${targetFile} \
+-w \
+-o ${safeOutput}
+`;
+    break;
+
+  case "full":
+  default:
+    // Full reconFTW scan (rate-limited, SAFE)
+    command = `
+${RECONFTW_SAFE_BIN} \
+-d ${cleanDomain} \
+-a \
+-o ${safeOutput}
+`;
+}
+
+
+
+  const startTime = Date.now();
+
+const proc = spawn(
+  "bash",   // ✅ Let OS resolve correct bash path
+  [
+    "-lc",
+    `cd ${RECONFTW_DIR} && (${command}) > ${logFile} 2>&1`
+  ],
+  {
+    detached: true,   // 🔥 CRITICAL
+    stdio: "ignore"
+  }
+);
+
+
+  proc.unref();
+
+  // 🔥 PID == PGID
+  await setScanStatus(scanId, {
+    pid: proc.pid,
+    pgid: proc.pid
+  });
+
+  proc.on("close", async () => {
+    const duration = (Date.now() - startTime) / 1000;
+
+    const latest = await Scan.findById(scanId);
+    if (!latest || latest.status === "stopped") return;
+
+    if (duration < 10) {
+      await setScanStatus(scanId, {
+        status: "failed",
+        error: "ReconFTW exited early",
+        completedAt: new Date()
+      });
+      return;
+    }
+
+    const results = await parseResultsFromPath(safeOutput);
+    const findings = normalizeFindings(results.vulnerabilities || []);
+    const score = scoringService.calculateScore(results);
+    const grade = scoringService.getGrade(score);
+
+    await setScanStatus(scanId, {
+      status: "completed",
+      completedAt: new Date(),
+      progressPct: 100,
+      results,
+      findings,
+      score,
+      grade,
+      currentModule: null
+    });
+  });
+}
+
+module.exports = {
+  scanDomain,
+  stopScan,
+  parseResultsFromPath
+};

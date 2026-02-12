@@ -1,0 +1,892 @@
+
+> securescan@0.1.0 lint
+> eslint
+
+
+D:\intership\New folder\new design of scanner\securescan\src\app\dashboard\history\page.tsx
+  7:29  warning  'Filter' is defined but never used  @typescript-eslint/no-unused-vars
+  9:10  warning  'cn' is defined but never used      @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\app\dashboard\new\page.tsx
+   4:18  warning  'AnimatePresence' is defined but never used  @typescript-eslint/no-unused-vars
+  44:23  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+
+D:\intership\New folder\new design of scanner\securescan\src\app\dashboard\page.tsx
+  15:12  warning  'loading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\app\dashboard\profile\page.tsx
+  14:5  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\app\dashboard\result\[id]\page.tsx
+   4:18  warning  'AnimatePresence' is defined but never used  @typescript-eslint/no-unused-vars
+  27:27  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+
+D:\intership\New folder\new design of scanner\securescan\src\components\dashboard\assessments\recent-assessments.tsx
+  4:40  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\dashboard\domain-input.tsx
+  3:17  warning  'Search' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\dashboard\new-scan-trigger.tsx
+  5:10  warning  'motion' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\dashboard\result\report-deep-dive.tsx
+   10:5   warning  'ChevronDown' is defined but never used   @typescript-eslint/no-unused-vars
+   68:47  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   69:43  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   70:45  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   71:42  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   96:46  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  161:72  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  248:87  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx
+   42:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:42:38
+  40 |             endLng: -43.1729,
+  41 |             arcAlt: 0.1,
+> 42 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+     |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  43 |         },
+  44 |         {
+  45 |             order: 1,            react-hooks/purity
+   51:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:51:38
+  49 |             endLng: 101.6869,
+  50 |             arcAlt: 0.2,
+> 51 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+     |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  52 |         },
+  53 |         {
+  54 |             order: 1,            react-hooks/purity
+   60:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:60:38
+  58 |             endLng: 36.852443,
+  59 |             arcAlt: 0.5,
+> 60 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+     |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  61 |         },
+  62 |         {
+  63 |             order: 2,           react-hooks/purity
+   69:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:69:38
+  67 |             endLng: 139.6503,
+  68 |             arcAlt: 0.2,
+> 69 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+     |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  70 |         },
+  71 |         {
+  72 |             order: 2,            react-hooks/purity
+   78:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:78:38
+  76 |             endLng: 101.6869,
+  77 |             arcAlt: 0.3,
+> 78 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+     |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  79 |         },
+  80 |         {
+  81 |             order: 2,            react-hooks/purity
+   87:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:87:38
+  85 |             endLng: -115.119411,
+  86 |             arcAlt: 0.3,
+> 87 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+     |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  88 |         },
+  89 |         {
+  90 |             order: 3,         react-hooks/purity
+   96:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:96:38
+  94 |             endLng: 114.1694,
+  95 |             arcAlt: 0.3,
+> 96 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+     |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  97 |         },
+  98 |         {
+  99 |             order: 3,            react-hooks/purity
+  105:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:105:38
+  103 |             endLng: -74.006,
+  104 |             arcAlt: 0.3,
+> 105 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  106 |         },
+  107 |         {
+  108 |             order: 3,     react-hooks/purity
+  114:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:114:38
+  112 |             endLng: -0.1276,
+  113 |             arcAlt: 0.3,
+> 114 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  115 |         },
+  116 |         {
+  117 |             order: 4,     react-hooks/purity
+  123:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:123:38
+  121 |             endLng: -56.05918,
+  122 |             arcAlt: 0.5,
+> 123 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  124 |         },
+  125 |         {
+  126 |             order: 4,   react-hooks/purity
+  132:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:132:38
+  130 |             endLng: 114.1694,
+  131 |             arcAlt: 0.7,
+> 132 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  133 |         },
+  134 |         {
+  135 |             order: 4,    react-hooks/purity
+  141:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:141:38
+  139 |             endLng: -2.3522,
+  140 |             arcAlt: 0.1,
+> 141 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  142 |         },
+  143 |         {
+  144 |             order: 5,     react-hooks/purity
+  150:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:150:38
+  148 |             endLng: -0.1276,
+  149 |             arcAlt: 0.3,
+> 150 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  151 |         },
+  152 |         {
+  153 |             order: 5,     react-hooks/purity
+  159:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:159:38
+  157 |             endLng: 151.2093,
+  158 |             arcAlt: 0.2,
+> 159 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  160 |         },
+  161 |         {
+  162 |             order: 5,    react-hooks/purity
+  168:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:168:38
+  166 |             endLng: -2.3522,
+  167 |             arcAlt: 0.2,
+> 168 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  169 |         },
+  170 |         {
+  171 |             order: 6,     react-hooks/purity
+  177:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:177:38
+  175 |             endLng: -63.34546,
+  176 |             arcAlt: 0.7,
+> 177 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  178 |         },
+  179 |         {
+  180 |             order: 6,   react-hooks/purity
+  186:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:186:38
+  184 |             endLng: 139.6503,
+  185 |             arcAlt: 0.1,
+> 186 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  187 |         },
+  188 |         {
+  189 |             order: 6,    react-hooks/purity
+  195:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:195:38
+  193 |             endLng: -0.1276,
+  194 |             arcAlt: 0.3,
+> 195 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  196 |         },
+  197 |         {
+  198 |             order: 7,     react-hooks/purity
+  204:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:204:38
+  202 |             endLng: -56.05918,
+  203 |             arcAlt: 0.1,
+> 204 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  205 |         },
+  206 |         {
+  207 |             order: 7,   react-hooks/purity
+  213:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:213:38
+  211 |             endLng: 13.405,
+  212 |             arcAlt: 0.1,
+> 213 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  214 |         },
+  215 |         {
+  216 |             order: 7,      react-hooks/purity
+  222:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:222:38
+  220 |             endLng: -118.2437,
+  221 |             arcAlt: 0.2,
+> 222 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  223 |         },
+  224 |         {
+  225 |             order: 8,   react-hooks/purity
+  231:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:231:38
+  229 |             endLng: 18.436529,
+  230 |             arcAlt: 0.2,
+> 231 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  232 |         },
+  233 |         {
+  234 |             order: 8,   react-hooks/purity
+  240:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:240:38
+  238 |             endLng: 4.9041,
+  239 |             arcAlt: 0.2,
+> 240 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  241 |         },
+  242 |         {
+  243 |             order: 8,      react-hooks/purity
+  249:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:249:38
+  247 |             endLng: -74.006,
+  248 |             arcAlt: 0.5,
+> 249 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  250 |         },
+  251 |         {
+  252 |             order: 9,     react-hooks/purity
+  258:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:258:38
+  256 |             endLng: -118.2437,
+  257 |             arcAlt: 0.2,
+> 258 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  259 |         },
+  260 |         {
+  261 |             order: 9,   react-hooks/purity
+  267:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:267:38
+  265 |             endLng: -43.1729,
+  266 |             arcAlt: 0.7,
+> 267 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  268 |         },
+  269 |         {
+  270 |             order: 9,    react-hooks/purity
+  276:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:276:38
+  274 |             endLng: -58.3816,
+  275 |             arcAlt: 0.5,
+> 276 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  277 |         },
+  278 |         {
+  279 |             order: 10,   react-hooks/purity
+  285:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:285:38
+  283 |             endLng: 77.209,
+  284 |             arcAlt: 0.7,
+> 285 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  286 |         },
+  287 |         {
+  288 |             order: 10,     react-hooks/purity
+  294:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:294:38
+  292 |             endLng: 121.4737,
+  293 |             arcAlt: 0.3,
+> 294 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  295 |         },
+  296 |         {
+  297 |             order: 10,   react-hooks/purity
+  303:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:303:38
+  301 |             endLng: 4.9041,
+  302 |             arcAlt: 0.3,
+> 303 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  304 |         },
+  305 |         {
+  306 |             order: 11,     react-hooks/purity
+  312:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:312:38
+  310 |             endLng: -118.2437,
+  311 |             arcAlt: 0.2,
+> 312 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  313 |         },
+  314 |         {
+  315 |             order: 11,  react-hooks/purity
+  321:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:321:38
+  319 |             endLng: 121.4737,
+  320 |             arcAlt: 0.2,
+> 321 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  322 |         },
+  323 |         {
+  324 |             order: 11,   react-hooks/purity
+  330:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:330:38
+  328 |             endLng: 103.8198,
+  329 |             arcAlt: 0.2,
+> 330 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  331 |         },
+  332 |         {
+  333 |             order: 12,   react-hooks/purity
+  339:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:339:38
+  337 |             endLng: -122.4194,
+  338 |             arcAlt: 0.1,
+> 339 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  340 |         },
+  341 |         {
+  342 |             order: 12,  react-hooks/purity
+  348:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:348:38
+  346 |             endLng: 114.1694,
+  347 |             arcAlt: 0.2,
+> 348 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  349 |         },
+  350 |         {
+  351 |             order: 12,   react-hooks/purity
+  357:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:357:38
+  355 |             endLng: -118.2437,
+  356 |             arcAlt: 0.3,
+> 357 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  358 |         },
+  359 |         {
+  360 |             order: 13,  react-hooks/purity
+  366:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:366:38
+  364 |             endLng: 114.1694,
+  365 |             arcAlt: 0.3,
+> 366 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  367 |         },
+  368 |         {
+  369 |             order: 13,   react-hooks/purity
+  375:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:375:38
+  373 |             endLng: 139.6503,
+  374 |             arcAlt: 0.3,
+> 375 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  376 |         },
+  377 |         {
+  378 |             order: 13,   react-hooks/purity
+  384:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:384:38
+  382 |             endLng: -58.3816,
+  383 |             arcAlt: 0.1,
+> 384 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  385 |         },
+  386 |         {
+  387 |             order: 14,   react-hooks/purity
+  393:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\globe-demo.tsx:393:38
+  391 |             endLng: 39.883798,
+  392 |             arcAlt: 0.3,
+> 393 |             color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  394 |         },
+  395 |     ];
+  396 |                            react-hooks/purity
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\anatomy-of-scan.tsx
+  147:32  warning  React Hook useEffect has an unnecessary dependency: 'smoothProgress'. Either exclude it or remove the dependency array. Outer scope values like 'smoothProgress' aren't valid dependencies because mutating them doesn't re-render the component  react-hooks/exhaustive-deps
+  251:25  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/rules-of-hooks')
+  265:37  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/rules-of-hooks')
+  267:49  error    React Hook "useTransform" cannot be called inside a callback. React Hooks must be called in a React function component or a custom React Hook function                                                                                            react-hooks/rules-of-hooks
+  268:50  error    React Hook "useTransform" cannot be called inside a callback. React Hooks must be called in a React function component or a custom React Hook function                                                                                            react-hooks/rules-of-hooks
+  269:58  error    React Hook "useTransform" cannot be called inside a callback. React Hooks must be called in a React function component or a custom React Hook function                                                                                            react-hooks/rules-of-hooks
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\bento-features.tsx
+    3:17  warning  'useState' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+    4:18  warning  'AnimatePresence' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+    5:31  warning  'Search' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+  110:11  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+  220:70  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\bento-features.tsx:220:70
+  218 |                                         <motion.div
+  219 |                                             initial={{ width: 0 }}
+> 220 |                                             whileInView={{ width: `${Math.random() * 60 + 40}%` }}
+      |                                                                      ^^^^^^^^^^^^^ Cannot call impure function
+  221 |                                             transition={{ duration: 1, delay: i * 0.2 }}
+  222 |                                             className="h-full bg-blue-500/30"
+  223 |                                         />                react-hooks/purity
+  225:95  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\bento-features.tsx:225:95
+  223 |                                         />
+  224 |                                     </div>
+> 225 |                                     <span className="text-[10px] font-black text-slate-400">{(Math.random() * 0.99).toFixed(3)}</span>
+      |                                                                                               ^^^^^^^^^^^^^ Cannot call impure function
+  226 |                                 </div>
+  227 |                             ))}
+  228 |                             <div className="p-3 rounded-xl bg-blue-50/50 border border-blue-100 mt-4">                        react-hooks/purity
+  277:60  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\bento-features.tsx:277:60
+  275 |                                         key={i}
+  276 |                                         initial={{ height: 2 }}
+> 277 |                                         animate={{ height: Math.random() * 40 + 10 }}
+      |                                                            ^^^^^^^^^^^^^ Cannot call impure function
+  278 |                                         transition={{ duration: 0.5, repeat: Infinity, repeatType: 'mirror', delay: i * 0.02 }}
+  279 |                                         className="w-1 bg-emerald-500/20 rounded-full"
+  280 |                                     />  react-hooks/purity
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\brand-reveal.tsx
+  3:10  warning  'useRef' is defined but never used           @typescript-eslint/no-unused-vars
+  4:18  warning  'AnimatePresence' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\curtain-menu.tsx
+    6:10  warning  'Menu' is defined but never used                                 @typescript-eslint/no-unused-vars
+  105:77  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\cyber-aperture-hero.tsx
+   5:10  warning  'Search' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+   5:18  warning  'ArrowRight' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+   5:30  warning  'Dna' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+  11:12  warning  'isScanning' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+  42:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\cyber-aperture-hero.tsx:42:13
+  40 |     useEffect(() => {
+  41 |         if (userInput.length > 0) {
+> 42 |             setPulse(prev => prev + 1)
+     |             ^^^^^^^^ Avoid calling setState() directly within an effect
+  43 |         }
+  44 |     }, [userInput])
+  45 |  react-hooks/set-state-in-effect
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\features-grid.tsx
+   4:22  warning  'Code2' is defined but never used                                @typescript-eslint/no-unused-vars
+   4:36  warning  'Cpu' is defined but never used                                  @typescript-eslint/no-unused-vars
+  82:90  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\footer.tsx
+  4:8   warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+  5:22  warning  'Send' is defined but never used   @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-quality-monitor.tsx
+  5:10  warning  'Shield' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-radar.tsx
+  49:36  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-radar.tsx:49:36
+  47 |                             pathLength: [0, 1, 0],
+  48 |                             opacity: [0, 0.5, 0],
+> 49 |                             x: [0, Math.random() * 20 - 10],
+     |                                    ^^^^^^^^^^^^^ Cannot call impure function
+  50 |                             y: [0, Math.random() * 20 - 10]
+  51 |                         }}
+  52 |                         transition={{            react-hooks/purity
+  50:36  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-radar.tsx:50:36
+  48 |                             opacity: [0, 0.5, 0],
+  49 |                             x: [0, Math.random() * 20 - 10],
+> 50 |                             y: [0, Math.random() * 20 - 10]
+     |                                    ^^^^^^^^^^^^^ Cannot call impure function
+  51 |                         }}
+  52 |                         transition={{
+  53 |                             duration: 3 + Math.random() * 4,  react-hooks/purity
+  53:43  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-radar.tsx:53:43
+  51 |                         }}
+  52 |                         transition={{
+> 53 |                             duration: 3 + Math.random() * 4,
+     |                                           ^^^^^^^^^^^^^ Cannot call impure function
+  54 |                             repeat: Infinity,
+  55 |                             delay: i * 0.5
+  56 |                         }}                                                  react-hooks/purity
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-threat-globe.tsx
+   3:27  warning  'useState' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+   3:37  warning  'useEffect' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   7:10  warning  'motion' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+  15:17  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-threat-globe.tsx:15:17
+  13 |             const start = new THREE.Vector3().setFromSphericalCoords(
+  14 |                 2.5,
+> 15 |                 Math.random() * Math.PI,
+     |                 ^^^^^^^^^^^^^ Cannot call impure function
+  16 |                 Math.random() * Math.PI * 2
+  17 |             )
+  18 |             const end = new THREE.Vector3().setFromSphericalCoords(  react-hooks/purity
+  16:17  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-threat-globe.tsx:16:17
+  14 |                 2.5,
+  15 |                 Math.random() * Math.PI,
+> 16 |                 Math.random() * Math.PI * 2
+     |                 ^^^^^^^^^^^^^ Cannot call impure function
+  17 |             )
+  18 |             const end = new THREE.Vector3().setFromSphericalCoords(
+  19 |                 2.5,                                                   react-hooks/purity
+  20:17  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-threat-globe.tsx:20:17
+  18 |             const end = new THREE.Vector3().setFromSphericalCoords(
+  19 |                 2.5,
+> 20 |                 Math.random() * Math.PI,
+     |                 ^^^^^^^^^^^^^ Cannot call impure function
+  21 |                 Math.random() * Math.PI * 2
+  22 |             )
+  23 |                                                                        react-hooks/purity
+  21:17  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\global-threat-globe.tsx:21:17
+  19 |                 2.5,
+  20 |                 Math.random() * Math.PI,
+> 21 |                 Math.random() * Math.PI * 2
+     |                 ^^^^^^^^^^^^^ Cannot call impure function
+  22 |             )
+  23 |
+  24 |             // Create a curve                                                                                                              react-hooks/purity
+  49:15  warning  'state' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\hacker-terminal-hero.tsx
+    5:61   warning  'X' is defined but never used                                           @typescript-eslint/no-unused-vars
+  161:105  error    Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\holographic-globe.tsx
+   18:17  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\holographic-globe.tsx:18:17
+  16 |             const start = new THREE.Vector3().setFromSphericalCoords(
+  17 |                 2.5,
+> 18 |                 Math.random() * Math.PI,
+     |                 ^^^^^^^^^^^^^ Cannot call impure function
+  19 |                 Math.random() * Math.PI * 2
+  20 |             )
+  21 |             const end = new THREE.Vector3().setFromSphericalCoords(  react-hooks/purity
+   19:17  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\holographic-globe.tsx:19:17
+  17 |                 2.5,
+  18 |                 Math.random() * Math.PI,
+> 19 |                 Math.random() * Math.PI * 2
+     |                 ^^^^^^^^^^^^^ Cannot call impure function
+  20 |             )
+  21 |             const end = new THREE.Vector3().setFromSphericalCoords(
+  22 |                 2.5,                                                   react-hooks/purity
+   23:17  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\holographic-globe.tsx:23:17
+  21 |             const end = new THREE.Vector3().setFromSphericalCoords(
+  22 |                 2.5,
+> 23 |                 Math.random() * Math.PI,
+     |                 ^^^^^^^^^^^^^ Cannot call impure function
+  24 |                 Math.random() * Math.PI * 2
+  25 |             )
+  26 |                                                                        react-hooks/purity
+   24:17  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\holographic-globe.tsx:24:17
+  22 |                 2.5,
+  23 |                 Math.random() * Math.PI,
+> 24 |                 Math.random() * Math.PI * 2
+     |                 ^^^^^^^^^^^^^ Cannot call impure function
+  25 |             )
+  26 |
+  27 |             const mid = start.clone().lerp(end, 0.5).normalize().multiplyScalar(3.5)                                                       react-hooks/purity
+  136:15  warning  '_state' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  158:94  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-explicit-any
+  166:15  warning  '_state' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\jelly-theme-toggle.tsx
+  4:18  warning  'AnimatePresence' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\navbar.tsx
+  8:10  warning  'cn' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\performance-visualizer.tsx
+   4:18  warning  'useScroll' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+   4:29  warning  'useTransform' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   4:43  warning  'useSpring' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+   5:25  warning  'Search' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+   5:33  warning  'Shield' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+   6:10  warning  'cn' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+  20:11  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-explicit-any
+  69:59  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\performance-visualizer.tsx:69:59
+  67 |                         >
+  68 |                             {Array.from({ length: 10 }).map((_, i) => (
+> 69 |                                 <div key={i}>SCAN_BUFFER_{Math.random().toString(16).slice(2, 8)}... OK</div>
+     |                                                           ^^^^^^^^^^^^^ Cannot call impure function
+  70 |                             ))}
+  71 |                         </motion.div>
+  72 |                     </motion.div>  react-hooks/purity
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\product-preview.tsx
+  13:5  warning  'Command' is defined but never used  @typescript-eslint/no-unused-vars
+  14:5  warning  'Globe' is defined but never used    @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\project-info.tsx
+   3:10  warning  'motion' is defined but never used                               @typescript-eslint/no-unused-vars
+  19:40  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\security.tsx
+  10:101  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\split-hero.tsx
+  35:11  warning  'bgX' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  36:11  warning  'bgY' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\x-ray-headline.tsx
+  59:45  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\x-ray-headline.tsx:59:45
+  57 |                         {Array.from({ length: 1000 }).map((_, i) => (
+  58 |                             <span key={i} className="text-blue-500">
+> 59 |                                 {Math.floor(Math.random() * 255)}.{Math.floor(Math.random() * 255)}.xxx.xxx
+     |                                             ^^^^^^^^^^^^^ Cannot call impure function
+  60 |                             </span>
+  61 |                         ))}
+  62 |                     </div>                                    react-hooks/purity
+  59:79  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\marketing\x-ray-headline.tsx:59:79
+  57 |                         {Array.from({ length: 1000 }).map((_, i) => (
+  58 |                             <span key={i} className="text-blue-500">
+> 59 |                                 {Math.floor(Math.random() * 255)}.{Math.floor(Math.random() * 255)}.xxx.xxx
+     |                                                                               ^^^^^^^^^^^^^ Cannot call impure function
+  60 |                             </span>
+  61 |                         ))}
+  62 |                     </div>  react-hooks/purity
+
+D:\intership\New folder\new design of scanner\securescan\src\components\ui\3d-card.tsx
+  3:18  warning  'useState' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\ui\globe.tsx
+   11:21  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+   64:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+   67:11  warning  The 'defaultProps' object makes the dependencies of useEffect Hook (at line 184) change on every render. To fix this, wrap the initialization of 'defaultProps' in its own useMemo() Hook                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-hooks/exhaustive-deps
+   88:34  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+   89:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\intership\New folder\new design of scanner\securescan\src\components\ui\globe.tsx:89:13
+  87 |             globeRef.current = new ThreeGlobe();
+  88 |             (groupRef.current as any).add(globeRef.current);
+> 89 |             setIsInitialized(true);
+     |             ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  90 |         }
+  91 |     }, []);
+  92 |  react-hooks/set-state-in-effect
+  107:8   warning  React Hook useEffect has missing dependencies: 'defaultProps.emissive' and 'defaultProps.globeColor'. Either include them or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/exhaustive-deps
+  117:13  error    'points' is never reassigned. Use 'const' instead                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       prefer-const
+  147:44  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  157:30  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  158:30  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  159:28  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  160:28  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  161:27  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  162:30  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  165:36  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  171:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  178:28  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  271:5   error    Unexpected var, use let or const instead                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                no-var
+  276:5   error    Unexpected var, use let or const instead                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                no-var
+
+D:\intership\New folder\new design of scanner\securescan\src\components\ui\scroll-reveal.tsx
+  4:43  warning  'MotionValue' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\components\ui\tilt-card.tsx
+  3:17  warning  'useState' is defined but never used  @typescript-eslint/no-unused-vars
+  3:27  warning  'useRef' is defined but never used    @typescript-eslint/no-unused-vars
+
+D:\intership\New folder\new design of scanner\securescan\src\hooks\use-performance.ts
+  26:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\intership\New folder\new design of scanner\securescan\src\lib\api.ts
+  16:15  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  17:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\intership\New folder\new design of scanner\securescan\src\lib\motion-config.ts
+  31:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 153 problems (99 errors, 54 warnings)
+  3 errors and 2 warnings potentially fixable with the `--fix` option.
+

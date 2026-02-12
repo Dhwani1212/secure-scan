@@ -1,0 +1,18 @@
+
+--- NEW PARSE ---
+Base: /home/bhuvan/recon-results/698aba84c280d3bdbe3735b1, Domain: testphp.vulnweb.com
+Final resultsDir: /home/bhuvan/recon-results/698aba84c280d3bdbe3735b1
+Vulns found: 36366
+Subs found: 502
+
+--- NEW PARSE ---
+Base: /home/bhuvan/recon-results/698abb7dc280d3bdbe373639, Domain: testphp.vulnweb.com
+Final resultsDir: /home/bhuvan/recon-results/698abb7dc280d3bdbe373639
+Vulns found: 12437
+Subs found: 502
+
+--- NEW PARSE ---
+Base: /home/bhuvan/recon-results/698ac2b45bf4e05a14d44af4, Domain: allianzcloud.com
+Final resultsDir: /home/bhuvan/recon-results/698ac2b45bf4e05a14d44af4
+Vulns found: 0
+Subs found: 638

@@ -1,0 +1,100 @@
+[0;33m[2026-01-24 03:41:12] sub_passive has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/./.sub_passive[0m
+
+[0;33m[2026-01-24 03:41:12] sub_crt has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/./.sub_crt[0m
+
+[0;33m[2026-01-24 03:41:12] sub_active has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/./.sub_active[0m
+
+[0;33m[2026-01-24 03:41:12] sub_tls has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/./.sub_tls[0m
+
+
+[0;33m[2026-01-24 03:41:12] sub_noerror skipped due to mode or defined in reconftw.cfg.[0m
+
+[1;34m[2026-01-24 03:41:12]      Running: Bruteforce Subdomain Enumeration [0m
+[1;31m[!] Failed to process subdomains.[0m
+[0;33m[2026-01-24 03:41:14] sub_permut has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/./.sub_permut[0m
+
+[0;33m[2026-01-24 03:41:14] sub_regex_permut has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/./.sub_regex_permut[0m
+
+[0;33m[2026-01-24 03:41:14] sub_ia_permut has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/./.sub_ia_permut[0m
+
+
+[0;33m[2026-01-24 03:41:14] sub_recursive_passive skipped due to mode or defined in reconftw.cfg.[0m
+
+[0;33m[2026-01-24 03:41:14] sub_recursive_brute skipped due to mode or defined in reconftw.cfg.[0m
+
+[1;34m[2026-01-24 03:41:14]      Running: DNS Subdomain Enumeration and PTR search [0m
+[1;31m[!] Failed to count new subdomains.[0m
+[0;33m[2026-01-24 03:41:36] sub_scraping has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/./.sub_scraping[0m
+
+[0;33m[2026-01-24 03:41:36] sub_analytics has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/./.sub_analytics[0m
+
+
+[0;33m[2026-01-24 03:41:36] webprobe_simple already processed. To force, delete /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/.webprobe_simple[0m
+[1;34m
+[2026-01-24 03:41:36] Total subdomains:[0m
+
+
+[1;32m[2026-01-24 03:41:36] - 0 alive [0m
+testphp.vulnweb.com
+
+[1;32m[2026-01-24 03:41:36] - 0 new web probed [0m
+http://testphp.vulnweb.com
+
+[1;32m[2026-01-24 03:41:36] Subdomain Enumeration Finished [0m
+[1;34m[2026-01-24 03:41:36] Results are saved in testphp.vulnweb.com/subdomains/subdomains.txt and webs/webs.txt[0m
+[1;32m#######################################################################[0m
+
+
+[0;33m[2026-01-24 03:41:36] webprobe_full already processed. To force, delete /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/.webprobe_full[0m
+[0;33m[2026-01-24 03:41:36] subtakeover has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/..subtakeover [0m
+
+[0;33m[2026-01-24 03:41:36] s3buckets has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/..s3buckets[0m
+
+
+[0;33m[2026-01-24 03:41:36] cloud_extra_providers skipped or already processed.[0m
+
+[0;33m[2026-01-24 03:41:36] screenshot already processed. To force, delete /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/.screenshot[0m
+[0;33m[2026-01-24 03:41:36] cdnprovider has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/.cdnprovider[0m
+
+[0;33m[2026-01-24 03:41:36] portscan has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/..portscan[0m
+
+[0;33m[2026-01-24 03:41:36] geo_info has already been processed. To force execution, delete:
+    /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/..geo_info[0m
+
+
+[0;33m[2026-01-24 03:41:36] waf_checks already processed. To force, delete /home/bhuvan/reconftw/Recon/testphp.vulnweb.com/.called_fn/.waf_checks[0m
+[1;32m#######################################################################
+[1;34m[2026-01-24 03:41:36] Templates-based Web Scanner [0m
+[0;33m
+[2026-01-24 03:41:36] Running: Nuclei Severity: info [0m
+
+jq: parse error: Invalid characters in \uXXXX escape at line 8, column 7213
+[waf-detect:nginxgeneric] [http] [info] http://testphp.vulnweb.com
+[nginx-eol] [http] [info] http://testphp.vulnweb.com ["1.19.0"]
+[php-eol] [http] [info] http://testphp.vulnweb.com ["5.6.40"]
+[nginx-version] [http] [info] http://testphp.vulnweb.com ["nginx/1.19.0"]
+[php-detect] [http] [info] http://testphp.vulnweb.com ["5.6.40"]
+[clientaccesspolicy] [http] [info] http://testphp.vulnweb.com/clientaccesspolicy.xml
+[http-missing-security-headers:strict-transport-security] [http] [info] http://testphp.vulnweb.com
+[0;33m
+[2026-01-24 05:16:32] Running: Nuclei Severity: low [0m
+
+[0;33m
+[2026-01-24 05:32:00] Running: Nuclei Severity: medium [0m
+
+[0;33m
+[2026-01-24 05:32:22] Running: Nuclei Severity: high [0m
+

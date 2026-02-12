@@ -1,0 +1,32 @@
+{
+  "_id": "697426c0929b184038b45efa",
+  "userId": null,
+  "domain": "testphp.vulnweb.com",
+  "mode": "full",
+  "scanType": "reconftw",
+  "status": "completed",
+  "createdAt": "2026-01-24T01:56:16.483Z",
+  "startedAt": "2026-01-24T01:56:16.522Z",
+  "completedAt": "2026-01-24T08:11:53.398Z",
+  "pid": 10248,
+  "pgid": null,
+  "logFile": "/home/bhuvan/recon-results/697426c0929b184038b45efa/recon.log",
+  "outputPath": "/home/bhuvan/recon-results/697426c0929b184038b45efa",
+  "currentModule": null,
+  "progressPct": 100,
+  "results": {
+    "vulnerabilities": [],
+    "subdomains": [],
+    "hosts": [],
+    "osint": [],
+    "technologies": [],
+    "openPorts": [],
+    "webData": []
+  },
+  "findings": [],
+  "score": 0,
+  "grade": "A",
+  "error": null,
+  "queuedAt": "2026-01-24T01:56:16.483Z",
+  "__v": 0
+}
